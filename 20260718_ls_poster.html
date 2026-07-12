@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>図書館情報学課程 PRポスター</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+		<style>
+			/* ポスターのベースリセット */
+			* {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+			}
+			body {
+				font-family: 'Noto Sans JP', sans-serif;
+				background: #f0f4f8;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				min-height: 100vh;
+				padding: 40px 0;
+			}
+			
+			/* A4変形（ポスター比率）のコンテナ */
+			.poster {
+				width: 700px;
+				height: 990px;
+				background: #ffffff;
+				position: relative;
+				overflow: hidden;
+				box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				padding: 60px;
+			}
+			
+			/* 背景のグラフィカルな装飾 */
+			.poster::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 40%;
+				background: linear-gradient(135deg, #e0f2fe 0%, #ffe4e6 100%);
+				z-index: 1;
+				clip-path: ellipse(80% 60% at 50% 0%);
+			}
+			
+			/* キャッチコピーエリア */
+			.header {
+				position: relative;
+				z-index: 2;
+				text-align: center;
+				margin-top: 20px;
+			}
+			.university-name {
+				font-size: 18px;
+				font-weight: 700;
+				color: #600098;
+				letter-spacing: 0.1em;
+				margin-bottom: 10px;
+			}
+			.main-copy {
+				font-size: 42px;
+				font-weight: 900;
+				color: #1e293b;
+				line-height: 1.4;
+				letter-spacing: -0.02em;
+			}
+			.highlight {
+				background: linear-gradient(transparent 60%, #ffb8b8 60%);
+			}
+			
+			/* メインビジュアル（アニメ風女子大生パネル） */
+			.visual-container {
+				position: relative;
+				z-index: 2;
+				width: 100%;
+				height: 420px;
+				margin: 30px 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.illustration-box {
+				width: 100%;
+				height: 100%;
+				/* 親しみやすい20代前後のアニメテイストの女子学生イメージ */
+				background: url('bild/ls1.png') center/cover no-repeat;
+				border-radius: 24px;
+				box-shadow: 0 15px 30px rgba(0, 64, 152, 0.15);
+				border: 4px solid #ffffff;
+			}
+			
+			/* 特徴・アピールポイント */
+			.features {
+				position: relative;
+				z-index: 2;
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 20px;
+				margin-bottom: 20px;
+			}
+			.feature-card {
+				background: #f8fafc;
+				border-left: 6px solid #00a0e9;
+				padding: 15px 20px;
+				border-radius: 0 12px 12px 0;
+			}
+			.feature-card h3 {
+				font-size: 16px;
+				color: #004098;
+				margin-bottom: 5px;
+			}
+			.feature-card p {
+				font-size: 13px;
+				color: #475569;
+				line-height: 1.5;
+			}
+			
+			/* フッター・情報エリア */
+			.footer {
+				position: relative;
+				z-index: 2;
+				border-top: 2px solid #e2e8f0;
+				padding-top: 25px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			.program-title {
+				font-size: 20px;
+				font-weight: 700;
+				color: #1e293b;
+			}
+			.program-sub {
+				font-size: 13px;
+				color: #64748b;
+				margin-top: 4px;
+			}
+			.qr-area {
+				display: flex;
+				align-items: center;
+				gap: 15px;
+			}
+			.qr-code {
+				width: 75px;
+				height: 75px;
+				border: 1px solid #cbd5e1;
+				padding: 4px;
+				border-radius: 8px;
+				background: #fff;
+			}
+			.qr-label {
+				font-size: 11px;
+				color: #475569;
+				line-height: 1.4;
+				font-weight: bold;
+			}
+			
+			/* 印刷時の最適化設定 */
+			@media print {
+				body { background: none; padding: 0; }
+				.poster { box-shadow: none; width: 100%; height: 100vh; padding: 40px; }
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="poster">
+			<div class="header">
+				<p class="university-name">藤女子大学</p>
+				<h1 class="main-copy"><span class="highlight">図書館情報学課程で学ぶ</span></h1>
+			</div>
+			
+			<div class="visual-container">
+				<div class="illustration-box"></div>
+			</div>
+			
+			<div class="features">
+				<div class="feature-card">
+					<h3>全学部・全学科受講可</h3>
+					<p>2年次から4年次に受講します。</p>
+				</div>
+				<div class="feature-card" style="border-left-color: #ff4757;">
+					<h3>司書・司書教諭・学校司書</h3>
+					<p>情報アクセスの能力を高めます。</p>
+				</div>
+			</div>
+			
+			<div class="footer">
+				<div>
+					<h2 class="program-title">藤女子大学図書館情報学課程</h2>
+					<p class="program-sub">最近の就職：<br>北海道大学附属図書館・枝幸町立図書館・興部町立図書館・羅臼町図書館・日野町立図書館ほか<br>（大学図書館・公共図書館の専任職）</p>
+				</div>
+				<div class="qr-area">
+					<span class="qr-label">プログラムの詳細は<a href="https://www.fujijoshi.ac.jp/dept/program/clis" target="_blank">こちら</a> ➔</span>
+					<img class="qr-code" src="bild/qrcode_202607121543.png" alt="プログラム詳細URL QRコード">
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>
