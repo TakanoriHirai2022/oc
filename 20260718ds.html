@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>藤女子大学 数理・データサイエンス・AI教育プログラム</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/blood.min.css" id="theme">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+		
+		<style>
+			/* 文字はみ出し防止のための厳格なベース設定 */
+			.reveal {
+				font-family: 'Noto Sans JP', sans-serif;
+				background: #0b0f19;
+			}
+			
+			/* 各セクションの余白とサイズを固定し、はみ出しをガード */
+			.reveal .slides section {
+				padding: 20px 40px !important;
+				box-sizing: border-box;
+				max-height: 95% !important;
+			}
+			
+			.reveal h1, .reveal h2, .reveal h3 {
+				font-family: 'Noto Sans JP', sans-serif;
+				font-weight: 700;
+				text-transform: none;
+				color: #ffffff;
+				margin-bottom: 20px;
+			}
+			
+			.reveal h2 {
+				font-size: 1.8em !important;
+				border-left: 8px solid #00a0e9;
+				padding-left: 20px;
+				text-align: left;
+				margin-top: 10px;
+			}
+			
+			.reveal p, .reveal li {
+				font-size: 0.75em !important;
+				line-height: 1.6 !important;
+				color: #e2e8f0;
+			}
+			
+			/* アニメ風女子学生モデルを背景パネルとして美しく配置 */
+			.anime-bg-layout {
+				display: grid;
+				grid-template-columns: 1.2fr 0.8fr;
+				gap: 30px;
+				align-items: center;
+				text-align: left;
+				height: 80%;
+			}
+			
+			.anime-student-panel {
+				width: 100%;
+				height: 420px;
+				background-image: url('bild/15.png'); /* アニメイラストテイストのイメージ */
+				background-size: cover;
+				background-position: center;
+				border-radius: 15px;
+				border: 3px solid rgba(0, 160, 233, 0.4);
+				box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+			}
+			
+			/* 3列カードレイアウトの最適化 */
+			.tile-grid {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 15px;
+				margin-top: 20px;
+				text-align: left;
+			}
+			
+			.tile {
+				background: rgba(255, 255, 255, 0.04);
+				padding: 20px 15px;
+				border-radius: 12px;
+				border-top: 4px solid #00a0e9;
+			}
+			
+			.tile i {
+				font-size: 1.8em;
+				color: #00a0e9;
+				margin-bottom: 10px;
+			}
+			
+			.tile h3 {
+				font-size: 0.9em !important;
+				margin-bottom: 8px;
+				color: #ffffff;
+			}
+			
+			.highlight-box {
+				background: rgba(0, 64, 152, 0.3);
+				border: 2px solid #00a0e9;
+				padding: 20px;
+				border-radius: 10px;
+				margin-top: 15px;
+			}
+			
+			.text-accent {
+				color: #00a0e9;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				
+				<section data-background-gradient="linear-gradient(to bottom, #0b0f19, #1a233d)">
+					<div class="anime-bg-layout">
+						<div>
+							<h1 style="font-size: 2.0em; text-align: left; margin: 0;">藤女子大学</h1>
+							<h2 style="border: none; padding: 0; color: #00a0e9; font-size: 1.4em !important; margin-top: 10px;">数理・データサイエンス・AI<br>教育プログラム</h2>
+							<p style="font-size: 0.65em !important; color: #94a3b8; margin-top: 20px;">文部科学省認定・リテラシーレベル</p>
+						</div>
+						<div class="anime-student-panel"></div>
+					</div>
+				</section>
+				
+				<section>
+					<h2>プログラムの概要</h2>
+					<div class="anime-bg-layout">
+						<div>
+							<p>数理・データサイエンス・AIへの関心を高め、これからの社会で必須となる基礎スキルを網羅した体系的プログラムです。</p>
+							<div class="highlight-box">
+								<p style="margin: 0; color: #fff; font-weight: bold;">💡 全学部の学生が受講可能！</p>
+								<p style="margin: 5px 0 0 0; font-size: 0.85em !important; color: #cbd5e1;">文系・理系を問わず、スキルを武器にしたい20代のキャリアを強力にバックアップします。</p>
+							</div>
+						</div>
+						<div class="anime-student-panel" style="background-image: url('bild/16.png');"></div>
+					</div>
+				</section>
+				
+				<section>
+					<h2>データサイエンス基礎 Ⅰ</h2>
+					<p style="text-align: left; margin: 0 0 10px 0;">1年次前期開講 ／ <span class="text-accent">2026年度より全学科必修</span></p>
+					
+					<div class="tile-grid">
+						<div class="tile">
+							<i class="fa-solid fa-network-wired"></i>
+							<h3>基礎知識</h3>
+							<p>AIやネットワークの仕組み、情報社会を生きるためのモラルを学びます。</p>
+						</div>
+						<div class="tile">
+							<i class="fa-solid fa-display"></i>
+							<h3>情報活用</h3>
+							<p>PC操作はもちろん、デジタル社会の基盤となる情報リテラシーを固めます。</p>
+						</div>
+						<div class="tile">
+							<i class="fa-solid fa-chalkboard-user"></i>
+							<h3>発信技術</h3>
+							<p>データを的確に伝えるためのスライド作成・プレゼン技法を習得します。</p>
+						</div>
+					</div>
+				</section>
+				
+				<section>
+					<h2>データサイエンス基礎 Ⅱ</h2>
+					<p style="text-align: left; margin: 0 0 10px 0;">1年次後期開講 ／ <span class="text-accent">日常生活やビジネスで使いこなす</span></p>
+					
+					<div class="anime-bg-layout">
+						<div>
+							<p>データを分析し、未来を予測・判断するための実践的なアプローチを体験します。</p>
+							<ul style="margin-top: 10px; color: #cbd5e1; padding-left: 20px;">
+								<li><span class="text-accent">可視化：</span> グラフやヒートマップによるチャート化</li>
+								<li><span class="text-accent">データ比較：</span> 条件を揃えた比較やA/Bテストの基本</li>
+								<li><span class="text-accent">生成AI理解：</span> アルゴリズムの技術的な仕組みの学習</li>
+							</ul>
+						</div>
+						<div class="anime-student-panel" style="background-image: url('bild/11.png');"></div>
+					</div>
+				</section>
+				
+				<section>
+					<h2>Python と SQL の修得</h2>
+					<div class="anime-bg-layout">
+						<div>
+							<p>本格的なスキルを、初心者向けのステップで基礎から実習します。</p>
+							<ul style="margin-top: 10px; color: #cbd5e1; padding-left: 20px;">
+								<li><strong style="color: #fff;">Python (pandas)：</strong> データのクレンジングや前処理</li>
+								<li><strong style="color: #fff;">SQL：</strong> データの整理と管理システムの理解</li>
+								<li><strong style="color: #fff;">データ収集：</strong> スクレイピングやWebAPIの活用</li>
+							</ul>
+						</div>
+						<div class="anime-student-panel" style="background-image: url('bild/12.png');"></div>
+					</div>
+				</section>
+				
+				<section>
+					<h2>プログラムで身につく成果</h2>
+					<div class="tile-grid" style="margin-top: 40px;">
+						<div class="tile">
+							<i class="fa-solid fa-chart-line"></i>
+							<h3>可視化能力</h3>
+							<p>データを綺麗にまとめ、誰にでも伝わる図表にする力。</p>
+						</div>
+						<div class="tile">
+							<i class="fa-solid fa-robot"></i>
+							<h3>AI適切な活用力</h3>
+							<p>ただ使うだけでなく、仕組みを理解してAIを業務に応用する力。</p>
+						</div>
+						<div class="tile">
+							<i class="fa-solid fa-database"></i>
+							<h3>データアクセス</h3>
+							<p>SQLを使って、社内のデータに素早く安全にアクセスする環境を築く力。</p>
+						</div>
+					</div>
+				</section>
+				
+				<section style="text-align: left;">
+					<h2>修了要件と国の認定</h2>
+					<div class="highlight-box" style="background: rgba(255,255,255,0.02); border-color: #475569;">
+						<p style="margin: 0; font-weight: bold; color: #fff;">【修了要件】 2科目4単位の修得</p>
+						<p style="margin: 5px 0 0 0; color: #cbd5e1;">「データサイエンス基礎 Ⅰ」（2単位） ＋ 「データサイエンス基礎 Ⅱ」（2単位）</p>
+						<p style="margin: 0; font-weight: bold; color: #fff;">【継続学習】 2科目4単位</p>
+						<p style="margin: 5px 0 0 0; color: #cbd5e1;">「データ分析演習」（2単位） ＋ 「プログラミング演習」（2単位）</p>
+					</div>
+					
+					<div style="margin-top: 30px; display: flex; gap: 20px; align-items: center;">
+						<i class="fa-solid fa-award" style="font-size: 3.5em; color: #eab308;"></i>
+						<div>
+							<h3 style="color: #fff; font-size: 1.1em; margin: 0;">文部科学省認定プログラム</h3>
+							<p style="margin: 5px 0 0 0; color: #94a3b8;">本教育プログラムは2025年度に文部科学大臣より公式に認定されました。あなたのキャリアパスにおいて、公的な強みとして履歴書にも刻めるプログラムです。</p>
+						</div>
+					</div>
+				</section>
+				
+				<section data-background-gradient="linear-gradient(to bottom, #1a233d, #0b0f19)">
+					<div class="anime-bg-layout">
+						<div>
+							<h2 style="border: none; padding: 0; color: #fff; font-size: 1.5em !important; line-height: 1.4;">
+								データサイエンスで、<br>あなたの可能性を広げよう。
+							</h2>
+							<p style="color: #00a0e9; font-weight: bold; margin-top: 15px;">藤女子大学 数理・データサイエンス・AI教育プログラム</p>
+							
+							<div style="margin-top: 30px; background: rgba(0,0,0,0.3); padding: 15px; border-radius: 8px;">
+								
+							</div>
+						</div>
+						<div class="anime-student-panel" style="background-image: url('bild/11.png');"></div>
+					</div>
+				</section>
+				<section>
+					<h3>詳細・関連リンク</h3>
+					<hr>
+					<ul style="line-height: 2;">
+						<li><a href="https://www.fujijoshi.ac.jp/dept/mds" target="_blank">数理・データサイエンス・AI教育プログラム</a></li>
+						<li><a href="https://www.fujijoshi.ac.jp/dept/program/clis/" target="_blank">藤女子大学 図書館情報学課程 公式ページ</a></li>
+						<li><a href="https://www.fujijoshi.ac.jp/" target="_blank">藤女子大学 ホームページ</a></li>
+						<li><a href="https://www.mext.go.jp/a_menu/koutou/suuri_datascience_ai/00001.htm" target="_blank">文部科学省・数理・データサイエンス・AI教育プログラム認定制度</a></li>
+					</ul>
+				</section>
+				
+			</div>
+		</div>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
+		<script>
+			Reveal.initialize({
+					controls: true,
+					progress: true,
+					center: true,
+					hash: true,
+					width: 1100, /* 画面比率を固定してテキストはみ出しを防ぐ */
+					height: 700,
+					margin: 0.1,
+					transition: 'fade'
+			});
+		</script>
+	</body>
+</html>
