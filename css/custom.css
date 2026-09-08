@@ -1,0 +1,247 @@
+/* Custom CSS for Fujijoshi University Cultural Studies Department Presentation */
+
+:root {
+  --primary-color: #8b1538;     /* Fujijoshi Maroon/Crimson */
+  --primary-light: #ab254a;
+  --secondary-color: #d4af37;   /* Elegant Gold */
+  --accent-color: #1e3a8a;      /* Academic Royal Navy */
+  --bg-color: #fcfcfd;
+  --card-bg: #ffffff;
+  --text-dark: #222222;
+  --text-muted: #555555;
+  --border-color: #e5e7eb;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', 'Meiryo', sans-serif;
+  color: var(--text-dark);
+}
+
+.reveal {
+  font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', 'Meiryo', sans-serif;
+  color: var(--text-dark);
+  font-size: 28px; /* Standard base size for 1200x700 stage */
+}
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+  font-family: 'Hiragino Mincho ProN', 'Yu Mincho', 'Noto Serif JP', serif;
+  color: var(--primary-color);
+  text-transform: none;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  margin-top: 0;
+}
+
+.reveal h1 { font-size: 1.8em; margin-bottom: 15px; }
+.reveal h2 { font-size: 1.35em; border-bottom: 2px solid var(--secondary-color); padding-bottom: 6px; margin-bottom: 16px; }
+.reveal h3 { font-size: 1.1em; color: var(--accent-color); margin-bottom: 10px; }
+.reveal h4 { font-size: 0.95em; color: var(--primary-color); margin-bottom: 8px; }
+
+/* Utility Classes & Badges */
+.badge {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 3px 12px;
+  border-radius: 16px;
+  font-size: 0.75em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.badge-gold {
+  background-color: var(--secondary-color);
+  color: #111;
+}
+
+.badge-navy {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+.subtitle {
+  font-size: 0.95em;
+  color: var(--text-muted);
+  margin-bottom: 15px;
+}
+
+/* Flex & Grids */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 14px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+/* Cards & Containers */
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 14px 16px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.04);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.card-header {
+  font-weight: bold;
+  font-size: 0.95em;
+  color: var(--primary-color);
+  margin-bottom: 8px;
+  border-bottom: 1px dashed var(--border-color);
+  padding-bottom: 4px;
+}
+
+/* Q&A Cards */
+.qa-box {
+  background: #ffffff;
+  border-left: 5px solid var(--primary-color);
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  box-sizing: border-box;
+}
+
+.qa-box.answer {
+  border-left-color: var(--secondary-color);
+  background: #fdfbf7;
+}
+
+.question-title {
+  font-size: 0.95em;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 6px;
+}
+
+.answer-text {
+  font-size: 0.8em;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Table Styling */
+.reveal table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.75em;
+  margin: 10px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.reveal th {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 7px 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.reveal td {
+  padding: 6px 10px;
+  border-bottom: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.reveal tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+/* QR Code & Asset Wrappers */
+.qr-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-top: 12px;
+  box-sizing: border-box;
+}
+
+.qr-image {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 3px;
+  background: #fff;
+  flex-shrink: 0;
+}
+
+.img-frame {
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  max-height: 320px;
+  object-fit: contain;
+}
+
+.img-thumb {
+  max-height: 140px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* Schedule List */
+.schedule-item {
+  display: flex;
+  align-items: baseline;
+  padding: 6px 10px;
+  border-bottom: 1px dashed #e2e8f0;
+  font-size: 0.8em;
+}
+
+.schedule-time {
+  font-weight: bold;
+  color: var(--primary-color);
+  min-width: 130px;
+  flex-shrink: 0;
+}
+
+.schedule-room {
+  background: #eff6ff;
+  color: #1e40af;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.78em;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+/* Highlight boxes */
+.highlight-box {
+  background: linear-gradient(135deg, #fff5f7 0%, #fff 100%);
+  border: 1px solid #fecdd3;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-top: 12px;
+  text-align: left;
+  font-size: 0.85em;
+  color: #881337;
+  font-weight: 500;
+  box-sizing: border-box;
+}
+
+.footer-note {
+  font-size: 0.65em;
+  color: #64748b;
+  margin-top: 10px;
+  text-align: center;
+}
